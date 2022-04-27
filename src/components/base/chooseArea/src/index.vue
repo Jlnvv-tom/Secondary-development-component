@@ -34,7 +34,7 @@
 
 <script lang="ts" setup>
 import { ref, watch, defineEmits } from "vue";
-import data from "../lib/pac-code.json";
+import data from "../lib/pca-code.json";
 
 export interface DataItem {
   code: string;
