@@ -25,6 +25,7 @@
 <script lang="ts" setup>
 import { watch, ref, defineProps, defineEmits } from 'vue'
 import * as Icons from '@element-plus/icons-vue';
+import { ElMessage } from 'element-plus'
 
 let props = defineProps<{
   title: string, // 弹框标题
@@ -39,8 +40,20 @@ let handleClick = () => {
   emits('update:visible', !props.visible)
 }
 
+const useCopy = (text: string) => {
+  let input = document.createElement('input')
+  input.value = text
+  document.body.appendChild(input)
+  input.select()
+  document.execCommand('Copy')
+  document.body.removeChild(input)
+  ElMessage.success('复制成功')
+}
+
 let clickItem = (item: string) => {
-  
+  let text = `<${item}/>`
+  useCopy(text)
+  dialogVisible.value = false
 }
 
 watch(() => props.visible, (val:boolean) => {
