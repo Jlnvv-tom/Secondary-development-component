@@ -23,6 +23,14 @@
         <el-icon><setting /></el-icon>
         <span>设 置</span>
       </el-menu-item>
+      <el-menu-item index="/form">
+        <el-icon><Folder/></el-icon>
+        <span>表单组件</span>
+      </el-menu-item>
+      <el-menu-item index="/modelForm">
+        <el-icon><Folder/></el-icon>
+        <span>模态框表单组件</span>
+      </el-menu-item>
     </el-menu>
   </div>
 </template>
