@@ -38,9 +38,9 @@
           <slot name="uploadArea"></slot>
           <slot name="uploadTip"></slot>
         </el-upload>
-        <div class="full-screen-container">
+        <div class="full-screen-container" >
           <div id="toolbar" v-if="item.type === 'editor'" style="z-index: 101;"></div>
-          <div id="editor" v-if="item.type === 'editor'" style="height: 300px; z-index: 100;"></div>
+          <div id="editor" v-if="item.type === 'editor'" style="height: 200px; z-index: 100;"></div>
         </div>
       </el-form-item>
       <el-form-item
@@ -161,9 +161,21 @@ let resetFields = () => {
   }
 }
 
+// 表单验证
+let validate = () => {
+  return form.value!.validate
+}
+
+// 获取表单数据
+let getFormData = () => {
+  return model.value
+}
+
 // 使用vue3的新api 分发方法，它替代了之前的$children方法
 defineExpose({
-  resetFields
+  resetFields,
+  validate,
+  getFormData
 })
 
 // 监听父组件传递过来的options

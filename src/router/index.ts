@@ -31,6 +31,11 @@ const routes: RouteRecordRaw[] = [
         name: 'ModelForm',
         component: () => import('../views/modelForm/index.vue')
       },
+      {
+        path: '/wTable',
+        name: 'wTable',
+        component: () => import('../views/table/index.vue')
+      },
     ],
   },
 ];

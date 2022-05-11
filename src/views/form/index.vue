@@ -13,7 +13,7 @@
       @on-exceed="handleExceed"
      >
       <template #uploadArea>
-        <el-button type="primary">Click to upload</el-button>
+        <el-button type="primary" size="small">点击上传</el-button>
       </template>
       <template #uploadTip>
         <div style="color:#ccc;font-size:12px;">
@@ -215,12 +215,11 @@ let options: FormOptions[] =[
 ]
 
 let submitForm = (scope: Scope) => {
-  console.log('提交');
   scope.form.validate((valid) => {
     if(valid){
       console.log(scope.model);
       ElMessage.success('提交成功')
-      resetForm()
+      // resetForm()
     } else {
       ElMessage.error('表单填写错误')
     }

@@ -31,6 +31,10 @@
         <el-icon><Folder/></el-icon>
         <span>模态框表单组件</span>
       </el-menu-item>
+      <el-menu-item index="/wTable">
+        <el-icon><Folder/></el-icon>
+        <span>表格组件</span>
+      </el-menu-item>
     </el-menu>
   </div>
 </template>

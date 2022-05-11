@@ -4,13 +4,14 @@ import chooseArea from './chooseArea'
 import chooseAreaFour from './chooseAreaFour'
 import wForm from './form'
 import modelForm from './modelForm';
-
+import wTable from './table';
 const components =[
   chooseIcon,
   chooseArea,
   chooseAreaFour,
   wForm,
-  modelForm
+  modelForm,
+  wTable
 ]
 
 export default {

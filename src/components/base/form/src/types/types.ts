@@ -44,7 +44,7 @@ export interface FormOptions {
     thumbnailMode?: boolean,
     listType?: 'text' | 'picture' | 'picture-card',
     autoUpload?: boolean,
-    limit?:boolean
+    limit?:number,
   }
 }
 
