@@ -29,3 +29,4 @@ app.mount('#app')
 ```
 ### 起步效果
 ![image](https://user-images.githubusercontent.com/82532729/167629057-7c227a19-4f48-4f19-9da5-7b156f540edc.png)
+![modelform](https://user-images.githubusercontent.com/82532729/167869653-e2445102-7504-4965-8aba-dd4ea6cde65a.gif)
