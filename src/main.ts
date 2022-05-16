@@ -5,6 +5,8 @@ import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import * as Icons from '@element-plus/icons-vue'
 import WComponents from './components/base';
+import './mock'
+
 const app = createApp(App)
 
 // 遍历注册全局icon
