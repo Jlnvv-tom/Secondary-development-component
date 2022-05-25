@@ -6,6 +6,8 @@ import wForm from './form'
 import modelForm from './modelForm';
 import wTable from './table';
 import wTrend from './trend';
+import wNotification from './notification';
+import wList from './list';
 
 const components =[
   chooseIcon,
@@ -14,7 +16,9 @@ const components =[
   wForm,
   modelForm,
   wTable,
-  wTrend
+  wTrend,
+  wNotification,
+  wList
 ]
 
 export default {

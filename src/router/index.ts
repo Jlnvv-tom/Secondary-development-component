@@ -41,6 +41,11 @@ const routes: RouteRecordRaw[] = [
         name: 'wTrend',
         component: () => import('../views/trend/index.vue')
       },
+      {
+        path: '/wNotification',
+        name: 'wNotification',
+        component: () => import('../views/notification/index.vue')
+      },
     ],
   },
 ];
