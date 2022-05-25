@@ -5,13 +5,16 @@ import chooseAreaFour from './chooseAreaFour'
 import wForm from './form'
 import modelForm from './modelForm';
 import wTable from './table';
+import wTrend from './trend';
+
 const components =[
   chooseIcon,
   chooseArea,
   chooseAreaFour,
   wForm,
   modelForm,
-  wTable
+  wTable,
+  wTrend
 ]
 
 export default {

@@ -35,6 +35,10 @@
         <el-icon><Folder/></el-icon>
         <span>表格组件</span>
       </el-menu-item>
+      <el-menu-item index="/wTrend">
+        <el-icon><Folder/></el-icon>
+        <span>趋势组件</span>
+      </el-menu-item>
     </el-menu>
   </div>
 </template>

@@ -36,6 +36,11 @@ const routes: RouteRecordRaw[] = [
         name: 'wTable',
         component: () => import('../views/table/index.vue')
       },
+      {
+        path: '/wTrend',
+        name: 'wTrend',
+        component: () => import('../views/trend/index.vue')
+      },
     ],
   },
 ];
