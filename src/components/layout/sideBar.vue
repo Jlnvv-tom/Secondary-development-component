@@ -43,6 +43,10 @@
         <el-icon><Folder/></el-icon>
         <span>通知组件</span>
       </el-menu-item>
+      <el-menu-item index="/wMenu">
+        <el-icon><Folder/></el-icon>
+        <span>菜单组件</span>
+      </el-menu-item>
     </el-menu>
   </div>
 </template>

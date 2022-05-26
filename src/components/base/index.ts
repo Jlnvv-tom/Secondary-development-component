@@ -8,6 +8,7 @@ import wTable from './table';
 import wTrend from './trend';
 import wNotification from './notification';
 import wList from './list';
+import wMenu from './menu';
 
 const components =[
   chooseIcon,
@@ -18,7 +19,8 @@ const components =[
   wTable,
   wTrend,
   wNotification,
-  wList
+  wList,
+  wMenu
 ]
 
 export default {
