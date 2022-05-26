@@ -1,5 +1,10 @@
 <template>
-  <el-menu :default-active="defaultActive" :router="router" v-bind="$attrs">
+  <el-menu
+    :default-active="defaultActive"
+    :router="router"
+    v-bind="$attrs"
+    class="el-menu-vertical-demo"
+    >
     <template v-for="(item, index) in data" :key="index">
       <el-menu-item v-if="!item.children || !item.children.length" :index="item.index">
         <el-icon v-if="item.icon">
@@ -48,4 +53,9 @@ let props = defineProps({
 });
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.el-menu-vertical-demo:not(.el-menu--collapse) {
+  width: 200px;
+  min-height: 400px;
+}
+</style>

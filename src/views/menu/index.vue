@@ -4,7 +4,11 @@
       <w-menu :data="data1" defaultActive="1" a="2"></w-menu>
     </div>
     <div style="width: 200px">
-      <w-infinite-menu :data="data2" defaultActive="2" text-color="green"></w-infinite-menu>
+      <w-infinite-menu
+        :data="data2"
+        defaultActive="2"
+        text-color="green"
+      ></w-infinite-menu>
     </div>
   </div>
 </template>
@@ -14,22 +18,22 @@ let data1 = [
   {
     name: "导航一",
     index: "1",
-    icon: "document",
+    icon: "Document",
   },
   {
     name: "导航二",
     index: "2",
-    icon: "document",
+    icon: "Document",
   },
   {
     name: "导航三",
     index: "3",
-    icon: "document",
+    icon: "Document",
     children: [
       {
         name: "导航3-1",
         index: "3-1",
-        icon: "document",
+        icon: "Document",
       },
     ],
   },
@@ -38,32 +42,39 @@ let data2 = [
   {
     name: "导航一",
     index: "1",
-    icon: "document",
+    icon: "Document",
   },
   {
     name: "导航二",
     index: "2",
-    icon: "document",
+    icon: "Document",
   },
   {
     name: "导航三",
     index: "3",
-    icon: "document",
+    icon: "Document",
     children: [
       {
         name: "导航3-1",
         index: "3-1",
-        icon: "document",
+        icon: "Document",
         children: [
           {
             name: "导航3-1-1",
             index: "3-1-1",
-            icon: "document",
+            icon: "Document",
             children: [
               {
                 name: "导航3-1-1-1",
                 index: "3-1-1-1",
-                icon: "document",
+                icon: "Document",
+                children: [
+                  {
+                    name: "导航3-1-1-1",
+                    index: "3-1-1-1",
+                    icon: "Document",
+                  },
+                ],
               },
             ],
           },
@@ -75,9 +86,8 @@ let data2 = [
 </script>
 
 <style lang="scss" scoped>
-.container{
+.container {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
 }
-
 </style>

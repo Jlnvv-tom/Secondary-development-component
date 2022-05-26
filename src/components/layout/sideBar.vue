@@ -1,6 +1,6 @@
 <template>
   <div class="sideBar">
-    <el-menu
+    <!-- <el-menu
       active-text-color="#ffd04b"
       background-color="#545c64"
       class="el-menu-vertical-demo"
@@ -47,7 +47,17 @@
         <el-icon><Folder/></el-icon>
         <span>菜单组件</span>
       </el-menu-item>
-    </el-menu>
+    </el-menu> -->
+
+    <w-menu
+      :data="data"
+      defaultActive="/"
+      background-color="#545c64"
+      active-text-color="#ffd04b"
+      text-color="#fff"
+      :collapse="collapse"
+      router
+    ></w-menu>
   </div>
 </template>
 
@@ -56,12 +66,61 @@ import { defineProps } from 'vue'
 let props = defineProps<{
   collapse: boolean
 }>()
-const handleOpen = (key: string, keyPath: string[]) => {
-  console.log(key, keyPath);
-};
-const handleClose = (key: string, keyPath: string[]) => {
-  console.log(key, keyPath);
-};
+
+let data = [
+  {
+    name: "首 页",
+    index: "/",
+    icon: "location",
+  },
+  {
+    name: "关 于",
+    index: "/about",
+    icon: "document",
+  },
+  {
+    name: "设 置",
+    index: "/setting",
+    icon: "setting",
+  },
+  {
+    name: "表单组件",
+    index: "/form",
+    icon: "Folder",
+  },
+  {
+    name: "模态框表单组件",
+    index: "/modelForm",
+    icon: "Folder",
+  },
+   {
+    name: "趋势组件",
+    index: "/wTrend",
+    icon: "document",
+  },
+  {
+    name: "通知组件",
+    index: "/wNotification",
+    icon: "location",
+  },
+  {
+    name: "菜单组件",
+    index: "/wMenu",
+    icon: "Folder",
+  },
+  {
+    name: "表格组件",
+    index: "/wTable",
+    icon: "setting",
+  },
+]
+
+// const handleOpen = (key: string, keyPath: string[]) => {
+//   console.log(key, keyPath);
+// };
+// const handleClose = (key: string, keyPath: string[]) => {
+//   console.log(key, keyPath);
+// };
 </script>
 
 <style lang="scss" scoped>
@@ -70,9 +129,6 @@ const handleClose = (key: string, keyPath: string[]) => {
   background-color: #545c64;
   width: 100%
 }
-.el-menu-vertical-demo:not(.el-menu--collapse) {
-  width: 200px;
-  min-height: 400px;
-}
+
 </style>
 
