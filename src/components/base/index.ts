@@ -9,6 +9,7 @@ import wTrend from './trend';
 import wNotification from './notification';
 import wList from './list';
 import wMenu from './menu';
+import wProgress from './progress';
 
 const components =[
   chooseIcon,
@@ -20,7 +21,8 @@ const components =[
   wTrend,
   wNotification,
   wList,
-  wMenu
+  wMenu,
+  wProgress
 ]
 
 export default {

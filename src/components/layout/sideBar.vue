@@ -113,6 +113,11 @@ let data = [
     index: "/wTable",
     icon: "setting",
   },
+   {
+    name: "进度条组件",
+    index: "/wProgress",
+    icon: "setting",
+  },
 ]
 
 // const handleOpen = (key: string, keyPath: string[]) => {
