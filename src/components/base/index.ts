@@ -10,11 +10,12 @@ import wNotification from './notification';
 import wList from './list';
 import wMenu from './menu';
 import wProgress from './progress';
-
+import chooseTime from './chooseTime'
 const components =[
   chooseIcon,
   chooseArea,
   chooseAreaFour,
+  chooseTime,
   wForm,
   modelForm,
   wTable,

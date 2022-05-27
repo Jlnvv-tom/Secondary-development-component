@@ -113,9 +113,14 @@ let data = [
     index: "/wTable",
     icon: "setting",
   },
-   {
+  {
     name: "进度条组件",
     index: "/wProgress",
+    icon: "setting",
+  },
+  {
+    name: "时间组件",
+    index: "/chooseTime",
     icon: "setting",
   },
 ]
