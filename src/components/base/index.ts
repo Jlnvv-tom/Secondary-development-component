@@ -11,11 +11,14 @@ import wList from './list';
 import wMenu from './menu';
 import wProgress from './progress';
 import chooseTime from './chooseTime'
+import chooseDate from './chooseDate'
+
 const components =[
   chooseIcon,
   chooseArea,
   chooseAreaFour,
   chooseTime,
+  chooseDate,
   wForm,
   modelForm,
   wTable,
@@ -23,7 +26,7 @@ const components =[
   wNotification,
   wList,
   wMenu,
-  wProgress
+  wProgress,
 ]
 
 export default {
