@@ -69,19 +69,19 @@ let props = defineProps<{
 
 let data = [
   {
-    name: "首 页",
+    name: "设 置",
+    index: "/setting",
+    icon: "setting",
+  },
+  {
+    name: "图标选择组件",
     index: "/",
     icon: "location",
   },
   {
-    name: "关 于",
+    name: "地址区域组件",
     index: "/about",
     icon: "document",
-  },
-  {
-    name: "设 置",
-    index: "/setting",
-    icon: "setting",
   },
   {
     name: "表单组件",
@@ -121,6 +121,11 @@ let data = [
   {
     name: "时间组件",
     index: "/chooseTime",
+    icon: "setting",
+  },
+   {
+    name: "城市选择组件",
+    index: "/chooseCity",
     icon: "setting",
   },
 ]

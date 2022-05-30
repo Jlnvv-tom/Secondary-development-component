@@ -12,6 +12,7 @@ import wMenu from './menu';
 import wProgress from './progress';
 import chooseTime from './chooseTime'
 import chooseDate from './chooseDate'
+import chooseCity from './chooseCity'
 
 const components =[
   chooseIcon,
@@ -19,6 +20,7 @@ const components =[
   chooseAreaFour,
   chooseTime,
   chooseDate,
+  chooseCity,
   wForm,
   modelForm,
   wTable,
