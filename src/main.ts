@@ -4,7 +4,10 @@ import router from './router/index'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import * as Icons from '@element-plus/icons-vue'
-import WComponents from './components/base';
+// import WComponents from './components/base';
+import WComponents from '../lib/wjh-element-component.es.js';
+import '../lib/style.css'
+
 import './mock'
 
 const app = createApp(App)

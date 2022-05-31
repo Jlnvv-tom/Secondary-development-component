@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:components": "node ./command/build.js",
+    "lib": "npm run build:components"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^1.1.4",
