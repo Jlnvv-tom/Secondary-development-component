@@ -13,6 +13,7 @@ import wProgress from './progress';
 import chooseTime from './chooseTime'
 import chooseDate from './chooseDate'
 import chooseCity from './chooseCity'
+import calendar from './calendar'
 
 const components =[
   chooseIcon,
@@ -29,6 +30,7 @@ const components =[
   wList,
   wMenu,
   wProgress,
+  calendar
 ]
 
 export default {

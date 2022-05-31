@@ -62,10 +62,10 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue'
+import { defineProps } from "vue";
 let props = defineProps<{
-  collapse: boolean
-}>()
+  collapse: boolean;
+}>();
 
 let data = [
   {
@@ -93,7 +93,7 @@ let data = [
     index: "/modelForm",
     icon: "Folder",
   },
-   {
+  {
     name: "趋势组件",
     index: "/wTrend",
     icon: "document",
@@ -123,12 +123,17 @@ let data = [
     index: "/chooseTime",
     icon: "setting",
   },
-   {
+  {
     name: "城市选择组件",
     index: "/chooseCity",
     icon: "setting",
   },
-]
+  {
+    name: "日历组件",
+    index: "/calendar",
+    icon: "setting",
+  },
+];
 
 // const handleOpen = (key: string, keyPath: string[]) => {
 //   console.log(key, keyPath);
@@ -142,8 +147,6 @@ let data = [
 .sideBar {
   height: 100%;
   background-color: #545c64;
-  width: 100%
+  width: 100%;
 }
-
 </style>
-
